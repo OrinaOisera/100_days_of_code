@@ -9,13 +9,17 @@ if height >= 120 :
 
     if age < 12:
         bill = 5
-        print("Child tickets are : $5 dollars.")
+        print(f"Child tickets are : ${bill}dollars.")
     elif age <= 18:
         bill = 7
-        print("Youth tickets are $7 dollars")
+        print(f"Youth tickets are ${bill} dollars")
+     #Adds mild life crisis , uses logical operators
+    elif age >= 45 and age <= 55:
+        bill = 0
+        print(f"Adult  tickets are  ${bill} dollars")
     else:
         bill = 12
-        print("Adult  tickets are  $12 dollars")
+        print(f"Adult  tickets are  ${bill} dollars")
 
     wants_photo = input("Do you want photo taken? Y or N  ")
     if wants_photo == "Y":
