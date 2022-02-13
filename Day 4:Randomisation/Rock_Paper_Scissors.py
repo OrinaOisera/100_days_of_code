@@ -27,7 +27,7 @@ Scissors = ("""
 ---.__(___)
 """)
 import  random
-computer_hand = random.randint(0, 3)
+computer_hand = random.randint(0, 2)
 user_hand = int(input("What do you choose ? Type 0 for Rock   0 for Paper    2 for Scissor"))
 # 0 = rock
 # 1 = Paper
@@ -76,7 +76,6 @@ elif user_hand == 1 :
            print("Computer plays Scissors")
            print(Scissors)
            print("Computer wins")
-
 
 
 elif user_hand == 2:
