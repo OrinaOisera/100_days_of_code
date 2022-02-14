@@ -28,7 +28,7 @@ Scissors = ("""
 """)
 
 
-import  random
+import random
 
 game_images = [Rock, Paper, Scissors]
 
