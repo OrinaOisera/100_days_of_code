@@ -38,7 +38,7 @@ password_list_shuffle = random.shuffle(password_list)
 
 #Converts back to string
 pass_str = ""
-for char  in password_list:
+for char in password_list:
     pass_str += char
 print(pass_str)
 
