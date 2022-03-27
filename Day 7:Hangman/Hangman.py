@@ -6,15 +6,24 @@ word_list = ["ardvark", "babbon", "camel"]
 import random
 
 chosen_word = random.choice(word_list)
+print(f'the chosen word is : {chosen_word}')
 
-#Ask the user to assign their answer to a variable called gues.MAKE THE Guess lowr case.
-guess = input("Enter your 1st guess:").lower()
+display = []
+word_length = len(chosen_word)
+for i in range(word_length):
+    display += "_"
+print(display)
 
-#check if the leeter the uer guessed is one of the letters in the chosen_word
+end_of_game = False
 
+while not end_of_game:
+    guess = input("Enter your 1st guess:").lower()
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
 
-for letter in chosen_word:
-    if letter == guess:
-        print("Right")
-    else:
-        print("Wrong")
+    print(display)
+    if "_" not in display:
+        end_of_game = True
+        print("You win")
