@@ -1,11 +1,10 @@
+from logo import logo
+
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
             'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z']
-
-direction = input("Type  'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
 
 
 def caesar(start_text, shift_amount, cypher_direction):
@@ -19,4 +18,19 @@ def caesar(start_text, shift_amount, cypher_direction):
     print(f'The {cypher_direction}d text is {end_text}')
 
 
+print(logo)
+direction = input("Type  'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+
+
+
+
 caesar(start_text=text, shift_amount=shift, cypher_direction=direction)
+
+
+
+
+
+
