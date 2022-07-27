@@ -7,15 +7,16 @@ student_scores = { "Harry": 81 ,
 
 student_grades = {}
 
-for key in student_scores:
-    if  student_scores[key] >= 91:
-        student_grades[key] = "Outstanding"
-    elif student_scores[key] >= 81:
-         student_grades[key] = "Exceed Expectations"
-    elif student_scores[key] >= 71:
-         student_grades[key] = "Acceptable"
+for student in student_scores:
+    score = student_scores[student]
+    if  score >= 91:
+        student_grades[student] = "Outstanding"
+    elif score >= 81:
+         student_grades[student] = "Exceed Expectations"
+    elif score >= 71:
+         student_grades[student] = "Acceptable"
     else:
-         student_grades[key] = "Fail"
+         student_grades[student] = "Fail"
 
 
 
